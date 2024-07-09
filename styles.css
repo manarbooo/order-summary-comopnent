@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --vary_pale_blue: hsl(225, 100%, 98%);
+    --Pale_blue: hsl(225, 100%, 94%);
+    --Bright_blue: hsl(245, 75%, 52%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+
+}
+
+html, body{
+    width: 100%;
+    height: 130vh;
+    margin: 0;
+}
+body{
+    font-family: "Red Hat Display", sans-serif;
+    background-color: var(--Pale_blue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat; 
+    background-position: top;
+    background-size: 100vw 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 400px;
+    height:  650px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 40px 20px 0 var(--Pale_blue);
+    border-radius: 20px;
+}
+
+.mainImg{
+    width: 100%;
+    height: 35%;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 15px;
+}
+
+.mainTitle{
+    margin-bottom: 20px;
+    color: var(--Dark_blue);
+}
+
+.description{
+    color: var(--Desaturated_blue);
+    text-align: center;
+    line-height: 1.6rem;
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+.pricingPlan{
+    width: 85%;
+    height: 14%;
+    background-color: var(--vary_pale_blue);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.annPlan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -60px;
+    color: var(--Dark_blue);
+     
+}
+
+.annual{
+    font-weight: bold;
+    
+}
+
+.price{
+    color: var(--Desaturated_blue);
+}
+
+.pricingPlan img{
+    margin-left: -20px;
+}
+
+.link{
+    color: var(--Bright_blue);
+    font-weight: 550;
+}
+
+.link:hover{
+  color: hsla(245, 75%, 52%, .5);
+  text-decoration: none;
+}
+
+
+.payButton{
+    width: 85%;
+    height: 8%;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--Bright_blue);
+    font-weight: bold;
+    font-family:  "Red Hat Display", sans-serif;
+    border: none;
+    box-shadow: 0 20px 20px 0 var(--Pale_blue);
+    margin-bottom: 25px;
+}
+
+
+.cancelButton{
+    width: 85%;
+    height: 3%;
+    border-radius: 10px;
+    color: var(--Desaturated_blue);
+    background-color: white;
+    font-weight: bold;
+    font-family:  "Red Hat Display", sans-serif;
+    border: none;
+    margin-top: 5px;
+    
+}
+
+.payButton:hover{
+    background-color: hsla(245, 75%, 52%, .5);
+    cursor: pointer;
+}
+
+.cancelButton:hover{
+    cursor: pointer;
+    color: var(--Dark_blue);
+}
